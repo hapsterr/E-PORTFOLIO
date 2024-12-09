@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact|Happy</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2 style="justify-content: center;align-items: center;text-align: center;">CONTACT ME</h2>
+        <p style="justify-content: center;align-items: center;text-align: center;">If you'd like to connect or have any questions, feel free to reach out!</p>
+        <div class="contact-form">
+            <form onsubmit="redirectEmail(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="social-links"><hr>
+            <h3>Connect with me:</h3>
+            <div class="icons">
+                <h4>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">HappySeoketsa</a></h4>
+                <h4>GitHub: <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">HappySeoketsa</a></h4>
+                <h4>Email: <a href="mailto:happyseoketsa@gmail.com" target="_blank" title="Email">happyseoketsa@gmail.com</a></h4>
+            </div>
+        </div><br><br>
+        
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    <script>
+        function redirectEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Construct the mailto link
+            const mailtoLink = `mailto:happyseoketsa@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+            
+            // Redirect to mailto link
+            window.location.href = mailtoLink;
+        }
+    </script>
+    
+    
+</body>
+</html>

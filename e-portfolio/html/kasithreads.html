@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About|Happy</title>
+    <link rel="stylesheet" href="../css/global.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html" class="active">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center;text-align: center;margin: 0px 30px;">
+        <h2>PROJECT: KasiThreads - E-Commerce Platform</h2>
+        <p>KasiThreads is an online store designed to help local clothing brands showcase and sell their products. The website makes it easy for customers to browse items, choose sizes, and make secure payments. It aims to support small businesses in reaching more people online.</p>
+    </div>
+    <div class="about"><hr>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Product Display: Shows products with photos, prices, and details.</li>
+            <li>Secure Payments: Integrated Yoco Checkout for safe online payments.</li>
+            <li>Mobile-Friendly: Works well on both phones and computers.</li>
+            <li>Delivery Options: Includes PAXI delivery points for convenience.</li>
+        </ul><hr>
+        <h3>Technologies Used:</h3>
+        <ul>
+            <li>Frontend: HTML, CSS, JavaScript</li>
+            <li>Backend: Flask (Python)</li>
+            <li>Database: MySQL</li>
+            <li>Hosting: AWS EC2</li>
+            <li>Cloud Storage: AWS S3</li>
+        </ul><hr>
+        <h3>Note:</h3>
+        <p>KasiThreads is still under development and will be launched soon. Its goal is to create opportunities for local clothing brands to grow their businesses online.</p>
+        <a href="http://kasithreads.co.za" target="_blank" style="color: aqua;position: relative;text-decoration: none;text-align: center;font-size: 20px;align-items: center;justify-content: center;">VISIT WEBSITE</a>
+    </div><br><hr><br>
+
+    
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    
+</body>
+</html>

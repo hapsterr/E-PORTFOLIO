@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About|Happy</title>
+    <link rel="stylesheet" href="../css/global.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html" class="active">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center;text-align: center;margin: 0px 30px;">
+        <h2>CityHarvest Website</h2>
+    </div>
+    <div class="about">
+        <p>As a way of expressing gratitude, I created the website for CityHarvest Church, which was my family away from home during my first year of study. The website provides:</p>
+        <ul>
+            <li>Easy access to service schedules and event updates</li>
+            <li>Contact information for church members and visitors</li>
+        </ul>
+        <p>This project allowed me to combine my technical skills with my desire to give back to a community that supported me during a crucial time in my life.</p>
+        <a href="http://13.60.84.207" target="_blank" style="color: aqua;position: relative;text-decoration: none;text-align: center;font-size: 20px;align-items: center;justify-content: center;">VISIT WEBSITE</a>
+        
+    </div><br><hr><br>
+
+    
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    
+</body>
+</html>

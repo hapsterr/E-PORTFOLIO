@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About|Happy</title>
+    <link rel="stylesheet" href="../css/global.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html" class="active">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center;text-align: center;margin: 0px 10px;">
+        <h2>CAPSTONE PROJECT - Document Sharing and CV Generator App</h2>
+        <p>This website was created as part of our capstone project for 3rd-year Computer Science. I worked collaboratively with some of my classmates as a team to design and develop the platform. Together, we focused on solving real-world problems by combining our skills in programming, problem-solving, and teamwork.</p>
+        <hr>
+        <h2>Capstone Project Demo</h2>
+        <p>Watch this short demo to see how the document-sharing and CV generation app works.</p>
+        
+        <iframe src="https://drive.google.com/file/d/1PINf5gr40ts4upxYsZF9ohwl5aHq8hPM/preview"  allow="autoplay" style="width: 100%;height: auto;max-width: 600px;"></iframe>
+    </div>
+    <div class="about" style="margin: 0px 30px;"></div>
+        <hr>
+        <h2>Features:</h2>
+        <h3>Share Documents with QR Codes:</h3>
+        <ul>
+            <li>Upload a document, and the app creates a unique QR code for it.</li>
+            <li>Scan the QR code on another device to quickly access and download the document.</li>
+        </ul>
+        <h3>Create CVs Automatically:</h3>
+        <ul>
+            <li>Users can fill in their details, like personal and job-related information.</li>
+            <li>The app generates a professional CV for them automatically.</li>
+        </ul>
+        <h4>The website was hosted on Amazon EC2 Ubuntu server but due to hosting costs, the website is now down, the source code can be found on my github profile</h4>
+
+    </div><br><hr><br>
+
+    
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+body{
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.about{
+    margin: 30px;
+    height: 520px;
+}
+.about .aboutme{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about .education{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 620px;
+}
+.about .education div{
+    width: 45%;
+    background-color: rgb(26, 26, 26);
+    margin: 30px;
+    height: 350px;
+}
+.about .education div img{
+    width: 60%;
+    height: 100%;
+}
+
+.otheractivities{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+}
+
+
+/* Styling the outreach container */
+.outreach {
+    display: flex; /* Enables the items to align horizontally */
+    overflow-x: auto; /* Adds horizontal scroll when content overflows */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    white-space: nowrap; /* Prevents wrapping to the next line */
+    scroll-snap-type: x mandatory; /* Smooth snapping for better UX */
+    gap: 10px; /* Adds spacing between images */
+    padding: 10px; /* Adds padding inside the container */
+    background-color: black; /* Black background for contrast */
+    border: 2px solid white; /* Optional border for highlighting the section */
+    margin: 30px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+/* Styling the images inside the outreach container */
+.outreach img {
+    width: auto; /* Set a uniform width for all images */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Adds a subtle glow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+
+
+/* For smooth scrolling */
+.outreach::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+.outreach::-webkit-scrollbar-thumb {
+    background-color: white; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded scrollbar thumb */
+}
+.outreach::-webkit-scrollbar-track {
+    background-color: gray; /* Scrollbar track color */
+}
+
+@media (max-width: 680px) {
+    .about .education{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .about .education div{
+        position: relative;
+        padding-bottom: 40px;
+        width: 80%;
+        height: 70%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px gray;
+    }
+    .about .education div img{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .about .otheractivities{
+        position: absolute;
+        right: 0px;
+        width: 90%;
+        margin: 0px 20px;
+    }
+    ul{
+        position: absolute;
+        left: 0px;
+        right: 10px;
+        width: 80%;
+        
+        margin: 0px 20px;
+    }
+    .outreach{
+        margin: 0px;
+        margin-top: 330px
+    }
+    .outreach img {
+        height: 200px;
+    }
+}
+

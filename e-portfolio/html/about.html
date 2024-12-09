@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About|Happy</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html" class="active">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="aboutme">
+            <h2>ABOUT ME</h2>
+            <p>I am an aspiring software developer based in Pretoria, Gauteng. I am currently studying at the University of the Western Cape set to graduate june 2025, and I have a strong passion for solving real-world problems with technology.</p>
+        </div>
+
+        <div class="education">
+            <div class="highschool">
+                <img src="lehlabile_logo.png" alt="Lehlabile">
+                <h4>Lehlabile Secondary School</h4>
+                <h5>2017-2021</h5>
+            </div>
+            <div class="highschool">
+                <img src="uwc_logo.jpg" alt="uwc">
+                <h4>Bachelor’s in Computer Science (Expected to Graduate June 2025)</h4>
+                <h4>University of the Western Cape</h4>
+                <h5>2022-2024</h5>
+            </div>
+        </div>
+
+
+        <div class="otheractivities"><hr>
+            <h2>Extracurricular Activities</h2>
+            <p>Joined the <strong>UWC IT Society</strong> in collaboration with <strong>WEBMAX</strong> to engage in outreach programs aimed at introducing primary and high school learners to programming. Our activities included:</p> 
+        </div>
+        <ul style="margin-top: 200px;margin-left: 30px;">
+            <li>Teaching programming fundamentals using <strong>SCRATCH</strong>.</li>
+            <li>Engaging students in game development with <strong>TANKS</strong>.</li>
+            <li>Inspiring young learners to pursue careers in technology.</li>
+        </ul>   
+        <div class="outreach">
+            <img src="outreach1.jpg" alt="outreach">
+            <img src="outreach2.jpg" alt="outreach1">
+            <img src="outreach3.jpg" alt="outreach2">
+            <img src="outreach4.jpg" alt="outreach16">
+            <img src="outreach5.jpg" alt="outreach5">
+            <img src="outreach16.jpg" alt="outreach7">
+            <img src="outreach7.jpg" alt="outreach3">
+        </div><br>
+    
+    </div>
+
+    
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    
+</body>
+</html>

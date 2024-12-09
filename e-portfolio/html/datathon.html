@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About|Happy</title>
+    <link rel="stylesheet" href="../css/global.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html" class="active">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center;text-align: center;margin: 0px 30px;">
+        <h2>DIRISA Datathon 2023</h2>
+        
+    </div>
+    <div class="about">
+        <p>In 2023, I participated in the DIRISA Datathon, where the focus was on addressing youth unemployment. My team and I developed a model that predicts the employment rates of various career paths and recommends a better option likely to have more job opportunities in the near future. Here's what we achieved:</p>
+        <h3>Solution Overview:</h3>
+        <p>Using data from Stats SA, we analyzed the employment status of graduates from different fields using Python. Our model allowed users to input three potential career choices, and it forecasted which path would likely have more opportunities based on historical and current trends.</p>
+        <h3>Process:</h3>
+        <ul>
+            <li>Cleaned and preprocessed the data to ensure accuracy.</li>
+            <li>Visualized key insights to understand trends in employment.</li>
+            <li>Created forecasting models to predict future employment opportunities.</li>
+        </ul>
+        <h3>Challenges Faced:</h3>
+        <ul>
+            <li>One major challenge was finding data that aligned with our proposed solution. We eventually overcame this by combining and matching datasets from various sources to fit our needs.</li>
+        </ul><br>
+        <p>The experience not only enhanced my data analysis and problem-solving skills but also deepened my understanding of how data can be used to address real-world issues.</p>
+
+    </div><br><hr><br>
+
+    
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+    
+</body>
+</html>

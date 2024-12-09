@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills|Happy</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html" class="active">PROJECTS</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <h2 style="justify-content: center;align-items: center;text-align: center;">PROJECTS</h2>
+    <div class="projects">
+        <div>
+            <img src="kasithreads (1).png" alt="kasithreads">
+            <h3>E-COMMERCE PLATFORM</h3>
+            <a href="kasithreads.html">VIEW MORE....</a>
+        </div>
+        <div>
+            <img src="multipurpose.jpg" alt="capstone">
+            <h3>CAPSTONE PROJECT</h3>
+            <a href="capstone.html">VIEW MORE....</a>
+        </div>
+        <div>
+            <img src="cityharvest.png" alt="cityharvest">
+            <h3>CHURCH WEBSITE</h3>
+            <a href="cityharvest.html">VIEW MORE....</a>
+        </div>
+        
+    </div><br><hr><br>
+
+    
+    
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+</body>
+</html>

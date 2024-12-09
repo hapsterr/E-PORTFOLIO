@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills|Happy</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="skills.html" class="active">SKILLS</a>
+                <a href="achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <h2 style="justify-content: center;align-items: center;text-align: center;">TECHNICAL SKILLS</h2>
+        <div class="technical_skills">
+            <div>
+                <h3>PROGRAMMING LANGUAGES</h3>
+                <ul>
+                    <li>Python "Flask, Pandas" (Intermediate)</li>
+                    <li>Java (Basics)</li>
+                    <li>PHP (Basics)</li>
+                    <li>Javascript(Basics)</li>
+                    <li>R (Basics)</li>
+                    <li>SAS (Basics)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>WEB DEVELOPMENT</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Usability Testing</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>OTHER SKILLS</h3>
+                <ul>
+                    <li>DataCleaning and Virtualization</li>
+                    <li>MYSQL</li>
+                    <li>AWS (S3, EC2)</li>
+                    <li>API's</li>
+                    <li>Webhooks</li>
+                </ul>
+            </div>
+        </div><hr>
+
+        <h2 style="justify-content: center;align-items: center;text-align: center;">SOFT SKILLS</h2>
+        <div>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+            </ul>
+        </div><br><br>
+        
+    </div>
+
+    
+    
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+</body>
+</html>
