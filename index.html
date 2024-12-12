@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Seoketsa</title>
+    <link rel="stylesheet" href="e-portfolio/css/home.css">
+    <link rel="stylesheet" href="e-portfolio/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h2>PORTFOLIO</h2>
+        <div class="nav-container">
+            
+            <div class="links" id="navLinks">
+                <a href="e-portfolio/html/home.html" class="active">HOME</a>
+                <a href="e-portfolio/html/about.html">ABOUT</a>
+                <a href="e-portfolio/html/projects.html">PROJECTS</a>
+                <a href="e-portfolio/html/skills.html">SKILLS</a>
+                <a href="e-portfolio/html/achievements.html">ACHIEVEMENTS</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="html/IMG_20230329_163913.jpg" alt="happyseoketsa">
+        <div class="me">
+            <h3>Hi, I'm</h3>
+            <h2 style="font-size: 35px;font-weight: 500;">HAPPY SEOKETSA</h2>
+            <h4>Aspiring Software Developer | Passionate about Designing Seamless Digital Experiences.</h4>
+            <p>I am currently pursuing my Bachelor of Science in Computer Science Degree at the University of the Western Cape, with an expected graduation in June 2025. I am passionate about solving real-world problems through technology and designing innovative digital solutions. Explore my portfolio to see what I’ve been working on!</p>
+            <div style="margin-bottom: 50px;" >
+                <a href="e-portfolio/html/contact.html" class="contact">CONTACT</a>
+                <a href="e-portfolio/html/about.html" class="about">ABOUT</a>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('show');
+        }
+
+    </script>
+</body>
+</html>
